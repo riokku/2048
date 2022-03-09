@@ -1,16 +1,38 @@
 *, *::before, *::after{
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: 'Rubik', sans-serif;
 }
 
 body{
-  background-color: #333333;
+  background-color: #A60F2D;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   margin: 0;
   font-size: 7.5vmin;
+  padding: 5vh;
+}
+
+.content{
+  color: #fff;
+  padding-right: 5vh;
+}
+
+hr{
+  border: 3px solid #2f2f2f;
+}
+
+.content h1{
+  margin: 0;
+  text-shadow: 5px 5px 2px #000;
+}
+
+.content p{
+  font-size: 4.5vmin;
+}
+
+.content small{
+  font-size: 2vmin;
 }
 
 #game-board{
@@ -22,6 +44,7 @@ body{
   border-radius: 1vmin;
   padding: var(--cell-gap);
   position: relative;
+  border: 5px solid #2f2f2f;
 }
 
 .cell{
@@ -36,7 +59,6 @@ body{
   align-items: center;
   width: var(--cell-size);
   height: var(--cell-size);
-  background-color: red;
   border-radius: 1vmin;
   top: calc(var(--y)*(var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
   left: calc(var(--x)*(var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
